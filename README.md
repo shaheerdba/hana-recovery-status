@@ -19,7 +19,7 @@ Therefore it is assumed that you understand all statements that hana-recovery-st
 For recommendations see SAP HANA Administration Workshops or other documentation, like e.g. SAP Note [2400024](https://launchpad.support.sap.com/#/notes/=2400024)
 
 ### Sample Result:
-```
+```shell
 r16adm@host:/usr/sap/R16/HDB06/host/trace> rstat
 
 system timestamp: Mon Apr 29 17:01:58 CEST 2019
