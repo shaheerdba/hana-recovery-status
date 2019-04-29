@@ -1,7 +1,7 @@
 # SAP HANA Recovery Status Check Script (a.k.a rstat)
 ## A script to display the SAP HANA Recovery progress
 ### DESCRIPTION:
-The hana-recovery-status (a.k.a **rstat**) is a house keeping script for SAP HANA. It can be used to clean. It can be used to display realtime recovery status from the shell prompt itself, without having the need of finding the information from backup.log
+The hana-recovery-status (a.k.a **rstat**) is a house keeping script for SAP HANA. It can be used to display realtime recovery status from the bash prompt itself, without having the need of finding the information from backup.log
 
 ### DISCLAIMER:
 ANY USAGE OF rstat ASSUMES THAT YOU HAVE UNDERSTOOD AND AGREED THAT:
