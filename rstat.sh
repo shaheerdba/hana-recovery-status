@@ -17,7 +17,9 @@ fi
 echo -e "\nRECOVERY DETAILS:\n"
 egrep 'RECOVERY RECOVER DATA started' $DIR_INSTANCE/$VTHOSTNAME/trace/backup.log -A1 | tail -2
 echo -e "\n"
+if [[ "$val1" = "$val2" && "$val3" != "finished" ]]; then
 for i in `ps -eaf | grep hdbindexserver | grep -v grep | awk '{print $10}'| grep .`;do echo -e "\nstatus of indexserver $i\n" ; grep "RECOVERY progress of service: indexserver, sc12hdbr1601:$i*, volume: [0-9]" $DIR_INSTANCE/$VTHOSTNAME/trace/backup.log | tail;done
+fi
 echo -e "\n BACKUP LOG INFO (LAST FEW LINES)\n"
 
 if [[ "$val1" = "$val2" && "$val3" = "finished" ]]; then
